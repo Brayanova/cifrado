@@ -1,0 +1,140 @@
+* {margin: 0;padding: 0;}
+
+body{font-family: 'Brayan', sans-serif;}
+
+#pagina {
+    min-height: 200px;
+    width: 60%;
+    min-width: 600px;
+    background: whitesmoke;
+    margin: 50px auto;
+    padding: 30px;
+    color: #7f60ee;
+}
+
+.foto-y-nombre {
+    
+} 
+
+.foto {
+    width: 15%;
+    min-width: 130px;
+    float: left;
+    margin-right: 20px;
+}
+
+.cuadro-de-contacto {
+    width: 70.9%;
+    display: inline-block;
+}
+
+.nombre {
+    margin-bottom: -5px;
+}
+.sub-titulo {
+    display: inline-block;
+}
+
+.detalles-contacto {
+    background: #7f60ee;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#objectivo {
+
+}
+
+#objectivo h3 {
+    border: 1px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+}
+
+#objectivo p {
+    padding: 0 5px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #000;
+}
+
+#educacion h3 {
+    border: 1px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+}
+
+#educacion table td {
+    padding: 5px;
+    font-size: 14px;
+    color: #000;
+}
+
+#educacion table tr.primaria td:first-child {
+    width: 120px;
+    color: gray;
+    padding-bottom: 25px;
+}
+
+#educacion table tr.primaria-secundaria td:first-child {
+    padding-bottom: 25px;
+}
+
+#trabajo h3 {
+    border: 1px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+}
+
+#trabajo table td {
+    padding: 5px;
+    font-size: 14px;
+    color: #000;
+}
+
+#trabajo table tr.trabajo-1 td:first-child {
+    width: 120px;
+    color: gray;
+    padding-bottom: 25px;
+}
+
+#trabajo table tr.trabajo-1 td {
+    padding-bottom: 25px;
+}
+
+#trabajo table tr.trabajo-2 td:first-child {
+    width: 120px;
+    color: gray;
+}
+
+#biografia h3 {
+    border: 1px solid #d3d3d3;
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+}
+
+#biografia table td {
+    padding: 8px;
+    font-size: 15px;
+    color: #000;
+}
+
+#biografia table tr td:first-child {
+    width: 200px;
+}
+
+#biografia table tr td:nth-child(2) {
+    width: 300px;
+}

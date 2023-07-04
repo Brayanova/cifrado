@@ -1,0 +1,68 @@
+#include<iostream>
+#include<stdio.h>
+
+using namespace std;
+int arreglo[100]; 
+void LeerA(int Numero);
+void EscribeA(int Numero);
+void Shell(int Numero);
+
+int main(){
+	system("Color E0");
+    int Num;
+    //cout << endl;
+    cout<<"\n\t\t\t\tIngrese n cantidad de numeros que se van a ordenar: ";
+    //cout << endl;
+    cin>>Num;
+    LeerA(Num);
+    Shell(Num);
+    cout<<endl;
+    EscribeA(Num);
+    return 0;
+}
+
+void LeerA(int Numero){
+    int i;
+    for(i=1;i<=Numero;i++)
+    {
+        cout<<"\n\t\t\t\tValor ["<<i<<"]= ";
+        cin>>arreglo[i];
+    }
+}
+
+void EscribeA
+(int Numero){
+    int i;
+     cout << endl;
+    cout<<"\n\t\t\t\tElementos ordenados por metodo Shell (n cantidad de numeros) "<<endl;
+     cout << endl;
+    for(i=1;i<=Numero;i++)
+    {
+        
+        cout<<"\t"<<arreglo[i];
+    }
+}
+
+void Shell(int Numero){
+    int i,j,k,incremento,aux;
+    
+    incremento=Numero/2;
+    
+    while(incremento>0){
+        for(i=incremento+1;i<=Numero;i++){
+            j=i-incremento;
+            while(j>0){
+                if(arreglo[j]>=arreglo[j+incremento]){
+                    aux = arreglo[j];
+                    arreglo[j] = arreglo[j+incremento];
+                    arreglo[j+incremento] = aux;
+                }
+                else{
+                        j=0;
+                    }
+                j=j-incremento;
+            }
+        }
+        incremento=incremento/2;
+    }
+}
